@@ -114,7 +114,7 @@ FondyPayService
 ## Clone repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/FirstSiteShopWithMvc.git
+git clone https://github.com/Dimab-b/E-Commerce-Shop-ASP.NET-Core-MVC-Docker-Fondy.git
 
 cd FirstSiteShopWithMvc
 ```
