@@ -1,0 +1,12 @@
+﻿@model FirstSiteShopWithMvc.Models.Item
+
+
+<div>
+    <div class="foreffect">
+        <a href="/Home/product/@Model.Id"> <img src="~/img/@Model.Image" alt="Фото товару" />  </a>
+        <div class="overlay"></div>
+           
+    </div>
+    <h1>@Model.Name / @Model.Price.ToString("c") </h1>
+    <p> @Model.Description</p>
+</div>

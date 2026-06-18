@@ -1,0 +1,30 @@
+﻿@using FirstSiteShopWithMvc.Models
+@model List<Item>
+@{
+    ViewData["Title"] = "Корзина";
+    ViewData["H1"] = "Корзина";
+}
+
+@if(ViewBag.NoItems !=null){
+<p>@ViewBag.NoItems</p>
+}
+
+@foreach(var el in Model)
+{
+    <div class="nado"> 
+    <div class="order-item">
+        <img class="order-item-img" src="~/img/@el.Image" alt="Фото товару" />
+        <h1> @el.Name </h1>
+        <p>@el.Price.ToString("c")</p>
+        </div>
+    </div>
+
+    
+   
+}
+
+@if (ViewBag.Summary != null){
+<br>
+<p class="summary">Загальна сума всієї корзини: @ViewBag.Summary.ToString("c")</p>
+    <a href="/cart/order" class="make-order">Оформити замовлення</a>
+}

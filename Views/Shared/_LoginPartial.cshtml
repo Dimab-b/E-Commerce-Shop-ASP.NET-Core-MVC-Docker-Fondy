@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using FirstSiteShopWithMvc.Areas.Identity.Data
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+
+@if (SignInManager.IsSignedIn(User))
+{
+
+        <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Привіт ,  @UserManager.GetUserName(User)!</a>
+
+
+        <form  asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <button  type="submit" >Вихід</button>
+        </form>
+
+}
+else
+{
+
+        <a  asp-area="Identity" asp-page="/Account/Register">Реєстрація</a>
+
+        <a asp-area="Identity" asp-page="/Account/Login">Увійти</a>
+
+}
+

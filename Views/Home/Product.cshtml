@@ -1,0 +1,15 @@
+﻿@model Item;
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+<div class="imgdesc" >
+     <img src="~/img/@Model.Image" alt="Фото товару" />  
+  
+           
+</div>
+<div class="products"> 
+<h1 class="modelname">@Model.Name / @Model.Price.ToString("c") </h1>
+<p class="modelp">@Model.FullText</p>
+<a class="cartadd" href="/cart/addtocart/@Model.Id"> Добавити в корзину </a>
+</div>

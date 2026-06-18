@@ -1,0 +1,18 @@
+﻿@model List<Item>;
+
+@{
+    ViewData["Title"] = "Главная страница";
+    ViewData["H1"] = "Main Page";
+}
+
+<nav class="filters">
+    <a href="/">Всі товари</a>
+    <a href="/Home/shoes">Кросівки</a>
+    <a href="/Home/hoodies">Худі</a>
+
+</nav>
+
+@foreach(Item el in Model)
+   @Html.Partial("ListItem" ,el )
+
+
