@@ -116,7 +116,7 @@ FondyPayService
 ```bash
 git clone https://github.com/Dimab-b/E-Commerce-Shop-ASP.NET-Core-MVC-Docker-Fondy.git
 
-cd FirstSiteShopWithMvc
+cd E-Commerce-Shop-ASP.NET-Core-MVC-Docker-Fondy
 ```
 
 ---
