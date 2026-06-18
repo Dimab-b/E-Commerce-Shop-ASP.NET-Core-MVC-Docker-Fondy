@@ -155,6 +155,11 @@ docker compose up --build
 - ASP.NET Core MVC Application
 - MySQL Database
 
+Зайти на сайт можна буде за посиланням:
+```bash
+http://localhost:7102/
+```
+
 ---
 
 # Fondy Payment
@@ -178,7 +183,7 @@ https://ngrok.com/download
 Після встановлення запустіть тунель (замініть порт, якщо застосунок працює на іншому):
 
 ```bash
-ngrok http 5000
+ngrok http 7102
 ```
 
 Приклад результату:
